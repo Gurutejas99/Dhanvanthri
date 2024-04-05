@@ -1,0 +1,107 @@
+[9:41 pm, 14/03/2024] GT: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive About Us Page </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="aboutUs">
+        <img src="c:\Users\user\Desktop\NCC\pharma image.jpg" alt="computer user">
+        <div class="content">
+            <h2>About Us</h2>
+            <h4> Welcome to Pharma </h4>
+            <p class="description">
+                Pharmacy is a vital healthcare profession centered on medication management. 
+                Pharmacists dispense prescriptions, provide patient counseling, and ensure medication safety. 
+                They work in various settings like community pharmacies, hospitals, and research institutions. 
+                Pharmacists collaborate with healthcare teams to optimize treatment plans and monitor patient outcomes. 
+                In addition to dispensing medications, they offer services like vaccinations and health screenings. 
+                Pharmacists also contribute to drug research, development, and regulatory compliance. With their expertise, 
+                pharmacists play a crucial role in promoting patient health and well-being through the safe and effective use of medications.
+            </p>
+            <button class="btn">Shop now</button>
+        </div>
+    </section>
+
+</body>
+<style>
+ style.css
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+#aboutUs {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#aboutUs img {
+    width: 400px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.content {
+    margin: 20px 0;
+}
+
+.content h2 {
+    font-size: 50px;
+    color: #ffca70;
+}
+
+.content h4 {
+    font-size: 20px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.description {
+    color: #fff;
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 100;
+}
+
+.btn {
+    font-weight: bold;
+    border: 2px solid #ffca70;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.4s;
+    background-color: #ffca70;
+}
+
+.btn:hover {
+    border: 2px solid #ffca70;
+    background: transparent;
+    color: #ffca70;
+}
+
+@media screen and (max-width: 790px) {
+    #aboutUs img {
+        width: 80%;
+    }
+
+    #aboutUs {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
+</style>
+</html>

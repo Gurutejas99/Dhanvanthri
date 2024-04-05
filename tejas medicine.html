@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Blog Page Design </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h3> Navbar Goes Here </h3>
+    </nav>
+    <!-- Blog section -->
+    <section class="blogs-container">
+
+        <!-- Blog Item  -->
+        <div class="blogs-item">
+            <div class="blog-image">
+                <img src="c:\Users\user\Desktop\NCC\tablets 2.jpg" alt="blog-image">
+            </div>
+            <p class="description">
+                <span> Tablets </span> </p>
+            <div class="content">
+                <div class="about-author">
+                    <img src="c:\Users\user\Desktop\NCC\pharma image.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Item  -->
+        <div class="blogs-item">
+            <div class="blog-image">
+                <img src="c:\Users\user\Desktop\NCC\capsules.jpg" alt="blog-image">
+            </div>
+            <p class="description">
+                <span> Capsules </span></p>
+            <div class="content">
+                <div class="about-author">
+                    <img src="c:\Users\user\Desktop\NCC\pharma image.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Item  -->
+        <div class="blogs-item">
+            <div class="blog-image">
+                <img src="c:\Users\user\Desktop\NCC\syrup.jpg" alt="blog-image">
+            </div>
+            <p class="description">
+                <span> Syrup </span></p>
+            <div class="content">
+                <div class="about-author">
+                    <img src="c:\Users\user\Desktop\NCC\pharma image.jpg">
+                </div>
+            </div>
+        </div>
+    
+        <!-- Blog Item  -->
+        <div class="blogs-item">
+            <div class="blog-image">
+                <img src="c:\Users\user\Desktop\NCC\ointment.jpg" alt="blog-image">
+            </div>
+            <p class="description">
+                <span> Ointment </span></p>
+            <div class="content">
+                <div class="about-author">
+                    <img src="c:\Users\user\Desktop\NCC\pharma image.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog Item  -->
+        <div class="blogs-item">
+            <div class="blog-image">
+                <img src="c:\Users\user\Desktop\NCC\vitamins.jpg" alt="blog-image">
+            </div>
+            <p class="description">
+                <span> Vitamins </span></p>
+            <div class="content">
+                <div class="about-author">
+                    <img src="c:\Users\user\Desktop\NCC\pharma image.jpg">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Blog Item  -->
+        <div class="blogs-item">
+            <div class="blog-image">
+                <img src="c:\Users\user\Desktop\NCC\calcium.jpg" alt="blog-image">
+            </div>
+            <p class="description">
+                <span> Calcium </span></p>
+            <div class="content">
+                <div class="about-author">
+                    <img src="c:\Users\user\Desktop\NCC\pharma image.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: .5rem;
+    background: rgb(13, 13, 13);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #fff;
+}
+
+.blogs-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.blogs-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .3rem;
+    justify-content: center;
+    padding: .3rem;
+    width: 260px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #fff;
+    margin: .5rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.blogs-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 10px 8px 30px rgb(0 0 0 / 30%);
+}
+
+.blog-image {
+    overflow: hidden;
+    border-radius: .3rem;
+}
+
+.blog-image:hover img {
+    transition: all .3s;
+    transform: scale(1.1);
+    border-radius: .3rem;
+}
+
+.blog-image img {
+    width: 100%;
+    background-size: contain;
+    border-radius: .3rem;
+}
+
+.about-author img {
+    width: 20%;
+}
+
+.description {
+    font-size: .75rem;
+}
+
+.blog-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .7rem;
+    margin-top: 1rem;
+}
+
+.about-author {
+    display: flex;
+    align-items: center;
+    font-size: .6rem;
+    position: relative;
+    bottom: 0;
+    left: -0.8rem;
+}
+
+.about-author span {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 551px) {
+    .blogs-container {
+        justify-content: center;
+    }
+}
+
+</style>
+</html>
